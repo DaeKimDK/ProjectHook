@@ -5,9 +5,12 @@ public class Spawner1 : MonoBehaviour {
 	private float timer;
 	public GameObject item;
 	public float spawntime;
+	public float spawnchance;
+	public int spawnseed;
 
 	void Start() 
 	{
+		Random.seed = spawnseed;
 		InvokeRepeating ("addItem", spawntime, spawntime);
 	}
 
@@ -17,6 +20,10 @@ public class Spawner1 : MonoBehaviour {
 
 		Vector2 spawnPoint = new Vector2 (Random.Range (x1, x2), transform.position.y);
 
-		Instantiate(item, spawnPoint, transform.rotation);
+		if (Random.value < spawnchance) 
+		{
+			Instantiate (item, spawnPoint, transform.rotation);
+		}
+
 	}
 }

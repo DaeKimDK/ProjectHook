@@ -2,10 +2,11 @@
 using System.Collections;
 
 public class ItemDestroy : MonoBehaviour {
+	public float time;
 
 	// Use this for initialization
 	void Start () {
-		Destroy (gameObject, 5);
+		Destroy (gameObject, time);
 	
 	}
 	

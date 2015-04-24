@@ -7,6 +7,9 @@ public class movement : MonoBehaviour {
 	float speed = 1f;
 	private bool boosting = false;
 	private bool tempspeed = false;
+
+	GameObject Player;                          // Reference to the player GameObject.
+	BoostMeter boostmeter;                  // Reference to the player's health.
 	
 	void Update(){
 		moveDir.x = Input.GetAxis("Horizontal");
@@ -43,6 +46,7 @@ public class movement : MonoBehaviour {
 	void Boost()
 	{
 		boosting = true;
+		//boostmeter.decreaseMeter (5);
 		if (tempspeed == false)
 		{
 			velocity.y += 0.5f;
