@@ -6,6 +6,7 @@ public class movement : MonoBehaviour {
 	Vector3 moveDir = Vector3.zero;
 	float speed = 1f;
 	private bool boosting = false;
+	private bool tempspeed = false;
 	
 	void Update(){
 		moveDir.x = Input.GetAxis("Horizontal");
@@ -18,6 +19,11 @@ public class movement : MonoBehaviour {
 		else 
 		{
 			boosting = false;
+			if (tempspeed == true)
+			{
+				velocity.y -= 0.5f;
+				tempspeed = false;
+			}
 		}
 	}
 
@@ -37,5 +43,10 @@ public class movement : MonoBehaviour {
 	void Boost()
 	{
 		boosting = true;
+		if (tempspeed == false)
+		{
+			velocity.y += 0.5f;
+			tempspeed = true;
+		}
 	}
 }
