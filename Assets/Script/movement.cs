@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class movement : MonoBehaviour {
@@ -40,6 +40,7 @@ public class movement : MonoBehaviour {
 		if (other.gameObject.CompareTag ("Pick Up") && boosting)
 		{
 			other.gameObject.SetActive(false);
+			Draw_score.score += 1;
 		}
 	}
 
