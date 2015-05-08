@@ -15,12 +15,14 @@ public class Spawner1 : MonoBehaviour {
 	}
 
 	void addItem () {
-		float x1 = transform.position.x - 0.45F;
-		float x2 = transform.position.x + 0.45F;
+		float x1 = transform.position.x - 0.70F;
+		float x2 = transform.position.x + 0.70F;
+		float y1 = transform.position.y - 0.50F;
+		float y2 = transform.position.y + 0.50F;
 
-		Vector2 spawnPoint = new Vector2 (Random.Range (x1, x2), transform.position.y);
+		Vector2 spawnPoint = new Vector2 (Random.Range (x1, x2), Random.Range (y1, y2));
 
-		if (Random.value < spawnchance) 
+		if (Random.value <= spawnchance) 
 		{
 			Instantiate (item, spawnPoint, transform.rotation);
 		}

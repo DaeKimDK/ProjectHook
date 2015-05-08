@@ -7,7 +7,7 @@ public class Camera : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		GameObject player_go = GameObject.FindGameObjectWithTag ("Player");
+		GameObject player_go = GameObject.FindGameObjectWithTag ("PlayerInvis");
 		player = player_go.transform;
 		offset = transform.position.y - player.position.y;
 	
