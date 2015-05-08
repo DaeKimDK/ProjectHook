@@ -978,7 +978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 146d067e824540e44b9dd1ccd72ac267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 172720, guid: 75ef0495d1d3aad4f93e53adb5c15021, type: 2}
+  item: {fileID: 162526, guid: 077e854cea9f74a4c988c091bab1e709, type: 2}
   spawntime: 1
   spawnchance: .800000012
   spawnseed: 1
