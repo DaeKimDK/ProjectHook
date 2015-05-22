@@ -10,6 +10,8 @@ GameObject:
   - 4: {fileID: 431818}
   - 212: {fileID: 21231818}
   - 95: {fileID: 9531818}
+  - 114: {fileID: 11434260}
+  - 61: {fileID: 6132424}
   m_Layer: 0
   m_Name: little girl_0
   m_TagString: Untagged
@@ -29,6 +31,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!61 &6132424
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131818}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1, y: 1}
+  m_Center: {x: 0, y: 0}
 --- !u!95 &9531818
 Animator:
   serializedVersion: 3
@@ -44,6 +57,18 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11434260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cd400a20c27b40448713bca8ac62e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
 --- !u!212 &21231818
 SpriteRenderer:
   m_ObjectHideFlags: 1

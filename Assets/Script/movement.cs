@@ -13,6 +13,7 @@ public class movement : MonoBehaviour {
 	float bounce_vel = 5f;
 	public Vector3 invisPlayerPos;
 	public Vector3 tempPos;
+	Sprite newsprite;
 
 	GameObject Player;                          // Reference to the player GameObject.
 	BoostMeter boostmeter;                  // Reference to the player's health.
@@ -88,10 +89,6 @@ public class movement : MonoBehaviour {
 		{
 			other.gameObject.SetActive(false);
 			Draw_score.score += 1;
-		}
-		else if (velocity.y > 0.8)
-		{
-			velocity.y -= 0.1f;
 		}
 	}
 
