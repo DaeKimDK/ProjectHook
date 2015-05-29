@@ -7,7 +7,7 @@ public class Draw_score : MonoBehaviour {
 	public static int score = 0;
 
 	Text text;
-	
+
 	// Use this for initialization
 	void Awake () {
 

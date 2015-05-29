@@ -1,23 +1,9 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream:Assets/Sprite/gold bag.png.meta
 guid: 0af51722df0621b48bbdf0bd506e8a6a
 TextureImporter:
   fileIDToRecycleName:
     21300000: gold bag_0
     21300002: gold bag_1
-=======
-<<<<<<< Updated upstream
-guid: ca112c20daa4276448c1d2f5d23e004e
-TextureImporter:
-  fileIDToRecycleName:
-    21300000: New Piskel_0
-    21300002: New Piskel_1
-=======
-guid: 89cd6577a30a24391b1300bcacc43edf
-TextureImporter:
-  fileIDToRecycleName: {}
->>>>>>> Stashed changes
->>>>>>> Stashed changes:Assets/Sprite/New Piskel.png.meta
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -41,7 +27,6 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-<<<<<<< Updated upstream
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -49,15 +34,6 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-=======
-    aniso: -1
-    mipBias: -1
-    wrapMode: -1
-  nPOTScale: 0
-  lightmap: 0
-  compressionQuality: 50
-  spriteMode: 1
->>>>>>> Stashed changes
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -68,7 +44,6 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-<<<<<<< Updated upstream
     sprites:
     - name: gold bag_0
       rect:
@@ -90,8 +65,5 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-=======
-    sprites: []
->>>>>>> Stashed changes
   spritePackingTag: 
   userData: 
