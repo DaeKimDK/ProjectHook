@@ -5,8 +5,9 @@ public class movement : MonoBehaviour {
 	public Vector3 velocity;
 	Vector3 moveDir = Vector3.zero;
 	public float speed = 1f;
+	public int boost_len = 0;
 	bool boosting = false;
-	private bool tempspeed = false;
+	public static bool tempspeed = false;
 	float bounceSpeedY = 1f;
 	float waitTime = 0f;
 	bool bounce = false;
@@ -16,8 +17,8 @@ public class movement : MonoBehaviour {
 	Sprite newsprite;
 
 	GameObject Player;                          // Reference to the player GameObject.
-	BoostMeter boostmeter;                  // Reference to the player's health.
-	
+
+
 	void Update(){
 		if (bounce == true)
 		{
@@ -32,19 +33,34 @@ public class movement : MonoBehaviour {
 
 		if (Input.GetKey (KeyCode.Space) && bounce == false) 
 		{
-			Boost ();
+			if(BoostManage.IsZero==false)
+			{
+				if(speed>2.0)
+				{
+					velocity.y = speed;
+				}
+				else
+				{
+					Boost ();
+				}
+			}
+			else
+			{
+				boosting = false;
+				velocity.y = speed;
+			}
 		} 
 		else if (bounce == false)
 		{
 			boosting = false;
 			if (tempspeed == true)
 			{
-				velocity.y -= 0.5f;
 				tempspeed = false;
+				velocity.y = speed;
 			}
 		}
 	}
-
+	
 	// Update is called once per frame
 	void FixedUpdate () {
 		invisPlayerPos = GameObject.FindGameObjectWithTag("PlayerInvis").transform.position;
@@ -89,6 +105,10 @@ public class movement : MonoBehaviour {
 		{
 			other.gameObject.SetActive(false);
 			Draw_score.score += 1;
+			if (speed < 1.7f)
+			{
+				speed += 0.1f;
+			}
 		}
 	}
 
