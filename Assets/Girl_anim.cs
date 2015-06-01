@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Girl_anim : MonoBehaviour {
-	public Animation anim;
+	public Animator anim;
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +17,7 @@ public class Girl_anim : MonoBehaviour {
 	{
 		if (other.gameObject.CompareTag ("Player"))
 		{
+			anim.SetInteger("Dead", 1);
 			Debug.Log("Hit");
 		}
 	}

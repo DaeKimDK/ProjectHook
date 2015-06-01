@@ -1092,6 +1092,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 629407336}
   - 108: {fileID: 629407335}
+  - 212: {fileID: 629407338}
+  - 95: {fileID: 629407337}
   m_Layer: 0
   m_Name: Directional light
   m_TagString: Untagged
@@ -1146,6 +1148,43 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!95 &629407337
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 629407334}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8c5aea124af373a489f0724158ac1c01, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!212 &629407338
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 629407334}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &636847989
 GameObject:
   m_ObjectHideFlags: 0
@@ -1188,9 +1227,11 @@ MonoBehaviour:
   item: {fileID: 121900, guid: 1754804c9bf7e80488be0306d63d02fd, type: 2}
   item2: {fileID: 126610, guid: 2298ad4a3686d114e8feffc94932f86c, type: 2}
   item3: {fileID: 133688, guid: db1b833aee9fb6c4dbb8efb70c7f2a44, type: 2}
-  spawntime: .649999976
+  initial_spawntime: .649999976
+  spawntime: 0
   spawnseed: 4
   itemchoice: 0
+  Movement: {fileID: 703228612}
 --- !u!1 &640644085
 GameObject:
   m_ObjectHideFlags: 0
@@ -2070,9 +2111,11 @@ MonoBehaviour:
   item: {fileID: 121900, guid: 1754804c9bf7e80488be0306d63d02fd, type: 2}
   item2: {fileID: 126610, guid: 2298ad4a3686d114e8feffc94932f86c, type: 2}
   item3: {fileID: 133688, guid: db1b833aee9fb6c4dbb8efb70c7f2a44, type: 2}
-  spawntime: .649999976
+  initial_spawntime: .649999976
+  spawntime: 0
   spawnseed: 4
   itemchoice: 0
+  Movement: {fileID: 703228612}
 --- !u!1 &1279307745
 GameObject:
   m_ObjectHideFlags: 0
