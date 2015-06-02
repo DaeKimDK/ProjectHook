@@ -6,20 +6,16 @@ public class BuldingSpawner : MonoBehaviour {
 	public GameObject item;
 	public GameObject item2;
 	public GameObject item3;
-	public float initial_spawntime;
 	public float spawntime;
 	public int spawnseed;
 	public float itemchoice;
-	public movement Movement;
-
+	
 	void Start() 
 	{
-		spawntime = initial_spawntime;
 		Random.seed = spawnseed;
 		InvokeRepeating ("addItem", spawntime, spawntime);
 	}
 	
-
 	void addItem () {
 		Quaternion quat = new Quaternion (0, 0, 0, 0);
 

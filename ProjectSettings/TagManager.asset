@@ -11,6 +11,12 @@ TagManager:
   - BG3
   - BG4
   - LittleGirl
+  - Bomb
+  - Car
+  - BotCol
+  - TopCol
+  - LeftCol
+  - RightCol
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
